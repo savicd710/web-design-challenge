@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Add Navigation Bar -->
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="col-sm-12 col-md-2">
@@ -22,6 +23,23 @@
                 <span class ="navbar-toggler-icon"></span>
                 </button>
             </div>
+            <div class="col-sm-12 col-md-8"></div>
+                <!-- Dropdown for Navbar -->
+                <div class="col-sm-12 col-md-2">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-tem dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plot</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="Visualizations/temp.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="Visualizations/humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="Visualizations/cloudiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="Visualizations/wind.html">Wind Speed</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
         </nav>
     </div>
 </body>
