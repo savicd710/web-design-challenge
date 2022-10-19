@@ -22,45 +22,36 @@
 
 <body>
     <!-- Add Navigation Bar -->
-    <div>
-        <div class="row">
-            <!-- Add Latitude Home Button link -->
-            <div class="col col-lg-4 homebtn">
-                <a href="index.html">Latitude</a>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" style="background-color: rgb(255,255,255);" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Visualizations/temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Visualizations/humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Visualizations/cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Visualizations/wind.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Visualizations/comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Visualizations/data.html">Data</a>
+                    </li>
+                </ul>
             </div>
-            <!-- Add Menu Button for Navbar -->
-            <div class="col col-lg-8 menubuttons divtop">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Add Dropdown Items for each Visualization under Plots -->
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="Visualizations/temp.html">Max Temp</a>
-                                    <a class="dropdown-item" href="Visualizations/humidity.html">Humidity</a>
-                                    <a class="dropdown-item" href="Visualizations/cloudiness.html">Cloudiness</a>
-                                    <a class="dropdown-item" href="Visualizations/wind.html">Wind Speed</a>
-                                </div>
-                            </li>
-                            <!-- Add Comparison and Data links next to Plots-->
-                            <li class="nav-item">
-                                <a class="nav-link" href="Visualizations/comparison.html">Comparison</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Visualizations/data.html">Data</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
+        </nav>
     </div>
     <!-- Add the explanation of the project on the landing page on the left/top-->
     <div class="container">
