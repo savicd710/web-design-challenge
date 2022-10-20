@@ -1,3 +1,27 @@
 body {
-    background-color: rgb(235, 127, 127);
+    background-color: #dadee3;
+}
+
+h1, h2 {
+    color: rgb(36, 208, 214);
+}
+
+.container {
+    background-color: white;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    padding: inherit;
+    background-color: rgb(36, 208, 214);
+}
+
+.panel:hover {
+    border-style: solid;
+    border-color: rgb(36, 208, 214);
 }
