@@ -8,20 +8,52 @@ h1, h2 {
 
 .container {
     background-color: white;
-    padding-right: 6%;
-    padding-left: 6%;
+    box-sizing: content-box;
 }
 
 .navbar {
-    background-color: white;
+    background-color: #f8f9fa;
 }
 
 .navbar-brand {
+    border-radius: 10px;
     padding: inherit;
     background-color: rgb(36, 208, 214);
 }
 
-.panel:hover {
+.frame:hover {
     border-style: solid;
     border-color: rgb(36, 208, 214);
+}
+
+.box {
+    padding: 6%;
+    box-sizing: content-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: rgb(36, 208, 214);
+    width: inherit;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:999px) {
+    .navbar {
+        background-color: rgb(36, 208, 214);
+    }
+    
+    .navbar-brand {
+        padding: inherit;
+        background-color: #f8f9fa;
+    }
 }
